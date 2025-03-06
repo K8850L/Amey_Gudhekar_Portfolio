@@ -26,37 +26,34 @@
         font-size: 24px;
         font-weight: bold;
       }
-      .sidebar {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        height: calc(100vh - 80px);
-        width: 200px;
-        background: lightblue;
-        padding-top: 20px;
-        overflow-y: auto;
-      }
-      .sidebar a {
-        text-decoration: none;
+      .navbar-nav .nav-link {
         color: #333;
-        font-weight: bold;
-        display: block;
-        padding: 10px;
         transition: color 0.3s;
       }
-      .sidebar a:hover {
-        color: #ff6600;
+      .navbar-nav .nav-link:hover {
+        color: #007acc;
       }
       .main-content {
-        margin-left: 220px;
+        max-width: 800px;
+        margin: 0 auto;
         padding: 20px;
+        background: url("Images/Instrumentation_Engineer_Background.jpg")
+          no-repeat center center;
+        background-size: cover;
       }
       .container-section {
-        padding: 80px 20px;
-        background: rgba(255, 255, 255, 0.9);
+        padding: 60px 20px;
+        background: rgba(255, 255, 255, 0.8);
         border-radius: 8px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
+        transition: background-color 0.3s;
+      }
+      .container-section:nth-child(even) {
+        background: rgba(240, 240, 240, 0.9);
+      }
+      .container-section:hover {
+        background-color: rgba(230, 230, 230, 0.9);
       }
       .footer {
         background: #007acc;
@@ -74,39 +71,83 @@
         display: block;
         margin: 0 auto 15px;
       }
+      @media (max-width: 768px) {
+        .container-section {
+          padding: 40px 10px;
+        }
+        .profile-img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+      @media (max-width: 576px) {
+        .header {
+          font-size: 20px;
+        }
+        .container-section {
+          padding: 20px 5px;
+        }
+        .profile-img {
+          width: 80px;
+          height: 80px;
+        }
+      }
     </style>
   </head>
   <body>
     <div class="header">My Portfolio - Application Support Engineer</div>
 
-    <nav class="sidebar">
-      <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experience">Work Experience</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#education">Education</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#achievements">Achievements</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#hobbies">Hobbies</a>
-        </li>
-        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
-        </li>
-      </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#achievements">Achievements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hobbies">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
 
     <main class="main-content">
       <section id="about" class="container-section">
-        <img src="Images/Amey_photo_page-0001.jpg" alt="Profile Image" class="profile-img" />
+        <img
+          src="Images/Amey_photo_page-0001.jpg"
+          alt="Profile Image"
+          class="profile-img"
+        />
 
         <h2>About</h2>
         <p>
