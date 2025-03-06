@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: url("https://source.unsplash.com/1600x900/?technology,workspace")
+          no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+      }
+      .header {
+        background: #007acc;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .sidebar {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        height: calc(100vh - 80px);
+        width: 200px;
+        background: lightblue;
+        padding-top: 20px;
+        overflow-y: auto;
+      }
+      .sidebar a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        padding: 10px;
+        transition: color 0.3s;
+      }
+      .sidebar a:hover {
+        color: #ff6600;
+      }
+      .main-content {
+        margin-left: 220px;
+        padding: 20px;
+      }
+      .container-section {
+        padding: 80px 20px;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+      }
+      .footer {
+        background: #007acc;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+      }
+      .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        margin: 0 auto 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">My Portfolio - Application Support Engineer</div>
+
+    <nav class="sidebar">
+      <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#experience">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#achievements">Achievements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies">Hobbies</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <section id="education" class="container-section">
+        <h2>Education</h2>
+        <p>
+          <strong>B.E. in Instrumentation Engineering</strong> - Ramrao Adik
+          Institute of Technology, Navi Mumbai (2022-23) [7.14 CGPA].
+        </p>
+        <p>
+          <strong>H.S.C.</strong> (2017-18) - Saraswati Vidyalaya and Junior
+          College, Thane.
+        </p>
+        <p>
+          <strong>S.S.C.</strong> (2015-16) - Little Flower High School, Thane.
+        </p>
+      </section>
+
+      <section id="projects" class="container-section">
+        <h2>Projects</h2>
+        <h4>Solar Powered Bicycle</h4>
+        <p>
+          Solar powered bicycle, also known as a solar e-bike, is an electric
+          bicycle with an electric motor powered by a battery charged using
+          solar energy from solar panels.
+        </p>
+        <p>
+          It aims to develop an efficient and economical bicycle that can
+          replace gasoline-powered bikes as a mode of transport. The solar panel
+          and batteries placed on rooftops capture sunlight and convert it into
+          electricity. The batteries store extra electricity for use at night.
+        </p>
+      </section>
+
+      <section id="achievements" class="container-section">
+        <h2>Achievements</h2>
+        <p>
+          <strong>Sangeet Visharad in Tabla</strong> - Akhil Bhartiya Gandharva
+          Mahavidyalaya Mandal, Vashi.
+        </p>
+      </section>
+
+      <section id="hobbies" class="container-section">
+        <h2>Hobbies</h2>
+        <ul>
+          <li>To Play Music</li>
+          <li>Riding Bike</li>
+          <li>Swimming</li>
+        </ul>
+      </section>
+
+      <section id="resume" class="container-section">
+        <h2>Resume</h2>
+        <p>
+          <a href="your-resume.pdf" download class="btn btn-primary"
+            >Download Resume</a
+          >
+        </p>
+      </section>
+
+      <section id="contact" class="container-section">
+        <h2>Contact</h2>
+        <p>Email: your-email@example.com</p>
+        <p>Phone: +1234567890</p>
+        <p>
+          LinkedIn:
+          <a href="https://www.linkedin.com/in/your-profile" target="_blank"
+            >your-profile</a
+          >
+        </p>
+      </section>
+    </main>
+
+    <div class="footer">&copy; 2025 My Portfolio | All Rights Reserved</div>
+  </body>
+</html>
