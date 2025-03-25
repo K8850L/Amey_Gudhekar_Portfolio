@@ -13,10 +13,10 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        background: url("Images/background_image.jpg") no-repeat center center
-          fixed;
-        background-size: cover;
-        color: #001219;
+        background: url("images/your-background-image.jpg") no-repeat center
+          center fixed; /* Add your image path */
+        background-size: cover; /* Ensures the image covers the entire background */
+        color: #001219; /* Dark Charcoal */
       }
       .header {
         background: rgba(0, 51, 102, 0.9); /* Dark Blue */
@@ -39,7 +39,7 @@
         padding: 20px;
       }
       .container-section {
-        padding: 60px 20px;
+        padding: 20px;
         background: rgba(
           255,
           255,
@@ -50,6 +50,8 @@
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px;
         transition: background-color 0.3s;
+        max-height: 400px; /* Set a maximum height for the section */
+        overflow-y: auto; /* Enable vertical scrolling */
       }
       .container-section:nth-child(even) {
         background: rgba(102, 174, 221, 0.95); /* Light Blue */
@@ -166,11 +168,20 @@
 
       <section id="experience" class="container-section">
         <h2>Work Experience</h2>
-        <h4>Sites Commissioned:</h4>
+        <h4>A-EBERLE SYSTEMS PVT LTD (Jan 2024 - Present)</h4>
+        <p>
+          Ensuring Reliable Power Solutions | Specialized in installation,
+          testing, and commissioning of REGsys REG-D/REG-DA Voltage Control &
+          Transformer Monitoring Systems. Passionate about optimizing energy
+          infrastructure and supporting the energy transition with cutting-edge
+          SCADA and power quality solutions.
+        </p>
+      </section>
 
-        <h5>1. UAE</h5>
+      <section id="sites-commissioned" class="container-section">
+        <h2>Sites Commissioned</h2>
+        <h4>1. UAE Cybersecurity</h4>
         <ul>
-          <li><strong>Cybersecurity</strong></li>
           <li>Umm Al Daman Substation, DEWA.</li>
           <li>Cement Substation, DEWA.</li>
           <li>Valley Substation, DEWA.</li>
@@ -179,53 +190,60 @@
           <li>Layan Substation, DEWA.</li>
         </ul>
 
-        <h5>2. India</h5>
+        <h4>2. India</h4>
         <ul>
-          <li>Gujarat – Reliance Industries Limited, Jamnagar.</li>
-          <li>
-            Odisha – 400/220/34.5kV Switchyard, MSDS1, Jindal Steel and Power
-            Limited, Angul.
-          </li>
-          <li>
-            Chhattisgarh – 132/6.6kV, National Mineral Development Corporation,
-            Bacheli.
-          </li>
-          <li>Maharashtra – 260MVA, Thermal Power Station, NTPC Solapur.</li>
-          <li>Gujarat – 66/11kV, KSS Substation, Torrent Power, Surat.</li>
-          <li>Delhi – 66/11kV Substation, Dwarka Grid, BRPL, Delhi.</li>
-          <li>Goa – 400/220kV Xeldem, Dharbandora.</li>
-          <li>Tamil Nadu – SAUPL 52.8 MW, Mulanur.</li>
-        </ul>
-      </section>
+          <li>GUJRAT - Reliance Industries Limited, Jamnagar.</li>
+          <li>GUJRAT - 66/11kV, KSS Substation, Torrent Power, Surat.</li>
+          <li>ODISHA - 400/220/34.5kV, Switchyard, MSDS 1, JSPL, Angul.</li>
+          <li>CHHATTISGARH - 132/6.6kV, NMDC, Bacheli.</li>
 
-      <section id="education" class="container-section">
-        <h2>Education</h2>
-        <p>
-          <strong>B.E. in Instrumentation Engineering</strong> - Ramrao Adik
-          Institute of Technology, Navi Mumbai (2022-23) [7.14 CGPA].
-        </p>
-        <p>
-          <strong>H.S.C.</strong> (2017-18) - Saraswati Vidyalaya and Junior
-          College, Thane.
-        </p>
-        <p>
-          <strong>S.S.C.</strong> (2015-16) - Little Flower High School, Thane.
-        </p>
+          <li>DELHI - 66/11kV Dwarka Grid Substation, BRPL</li>
+          <li>
+            GOA - 400/220kV Xeldem Substation, Sterlite Power, Dharbandora.
+          </li>
+          <li>TAMIL NADU - 52.8 MW SAUPL, Mulanur.</li>
+          <li>MAHARASHTRA - 260MVA, Thermal Power Station, NTPC, Solapur.</li>
+          <li>MAHARASHTRA - 220kV GIS Substation, PDG, Airoli.</li>
+          <li>MAHARASHTRA - Mahindra & Mahindra, Kandivali.</li>
+          <li>MAHARASHTRA - BBL, Airoli.</li>
+        </ul>
       </section>
 
       <section id="projects" class="container-section">
         <h2>Projects</h2>
-        <h4>Solar Powered Bicycle</h4>
+        <h4>SOLAR POWER INVERTER</h4>
         <p>
-          Solar powered bicycle, also known as a solar e-bike, is an electric
-          bicycle with an electric motor powered by a battery charged using
-          solar energy from solar panels.
+          A solar inverter or photovoltaic (PV) inverter is a type of power
+          inverter which converts the variable direct current (DC) output of a
+          photovoltaic solar panel into a utility frequency alternating current
+          (AC) that can be fed into a commercial electrical grid or used by a
+          local, off-grid electrical network. The solar panel and the batteries
+          that are placed on rooftops attract Sun rays and then convert the
+          Sunlight into electricity. The batteries too grab the extra
+          electricity so that it can then be used to run appliances at night.
         </p>
         <p>
-          It aims to develop an efficient and economical bicycle that can
-          replace gasoline-powered bikes as a mode of transport. The solar panel
-          and batteries placed on rooftops capture sunlight and convert it into
-          electricity. The batteries store extra electricity for use at night.
+          The proposed model concept is represented that the robot is operated
+          using an android mobile phone or a laptop. The WIFI module is
+          interfaced with Arduino to control the robot using a mobile from far
+          away. Using ultrasonic sensors, obstacles or wastes are detected and
+          the data is sent to an Arduino for processing. The trash is picked up
+          by the robotic arm and the motion of the robotic arm is controlled by
+          4 servo motors. A metal sensor is used to detect whether the collected
+          garbage is metal or nonmetal. Using motor drivers, the rotational
+          speed of motors is controlled for the movement of the robot as per
+          requirement. The battery inside the robot provides the power needed
+          for all the operations.
+        </p>
+
+        <h4>SOLAR POWERED BICYCLE</h4>
+        <p>
+          Solar powered bicycle, also known as solar e-bike, is an electric
+          bicycle with an electric motor which is driven by the use of power
+          from the battery which is being charged using solar energy by solar
+          panels. Solar powered bicycle aims for developing an efficient and
+          economical bicycle which can replace gasoline powered bikes as a mode
+          of transport.
         </p>
       </section>
 
@@ -273,6 +291,6 @@
       </section>
     </main>
 
-    <div class="footer">&copy; 2025 My Portfolio | All Rights Reserved</div>
+    <div class="footer">&copy; 2025 Amey's Portfolio | All Rights Reserved</div>
   </body>
 </html>
